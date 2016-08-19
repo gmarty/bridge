@@ -1274,7 +1274,7 @@ var windowReady = (function() {
  */
 
 function isAdaptor(thing) {
-  return !!(thing && thing.addListener);
+  return thing && typeof thing.addListener !== 'undefined';
 }
 
 // Shorthand
